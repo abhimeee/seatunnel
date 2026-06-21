@@ -103,7 +103,7 @@ Vector dimension, supported by Elasticsearch 7.3 and later versions
 ```hocon
 sink {
     Elasticsearch {
-        hosts = ["https://localhost:9200"]
+        hosts = ["http://localhost:9200"]
         auth_type = "basic"
         username = "elastic"
         password = "your_password"
@@ -134,7 +134,7 @@ Base64 encoded API key in the format `base64(id:api_key)`. This is an alternativ
 ```hocon
 sink {
     Elasticsearch {
-        hosts = ["https://localhost:9200"]
+        hosts = ["http://localhost:9200"]
         auth_type = "api_key"
         auth.api_key_id = "your_api_key_id"
         auth.api_key = "your_api_key_secret"
@@ -147,7 +147,7 @@ sink {
 ```hocon
 sink {
     Elasticsearch {
-        hosts = ["https://localhost:9200"]
+        hosts = ["http://localhost:9200"]
         auth_type = "api_key_encoded"
         auth.api_key_encoded = "eW91cl9hcGlfa2V5X2lkOnlvdXJfYXBpX2tleV9zZWNyZXQ="
         index = "my_index"
@@ -282,7 +282,7 @@ SSL (Disable certificates validation)
 ```hocon
 sink {
     Elasticsearch {
-        hosts = ["https://localhost:9200"]
+        hosts = ["http://localhost:9200"]
         username = "elastic"
         password = "elasticsearch"
         
@@ -296,7 +296,7 @@ SSL (Disable hostname validation)
 ```hocon
 sink {
     Elasticsearch {
-        hosts = ["https://localhost:9200"]
+        hosts = ["http://localhost:9200"]
         username = "elastic"
         password = "elasticsearch"
         
@@ -310,7 +310,7 @@ SSL (Enable certificates validation)
 ```hocon
 sink {
     Elasticsearch {
-        hosts = ["https://localhost:9200"]
+        hosts = ["http://localhost:9200"]
         username = "elastic"
         password = "elasticsearch"
         
@@ -325,7 +325,7 @@ SAVE_MODE
 ```hocon
 sink {
     Elasticsearch {
-        hosts = ["https://localhost:9200"]
+        hosts = ["http://localhost:9200"]
         username = "elastic"
         password = "elasticsearch"
         

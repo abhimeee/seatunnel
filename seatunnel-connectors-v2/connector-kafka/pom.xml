@@ -36,7 +36,7 @@
 
     <dependencies>
 
-        <!-- TODO add to dependency management after version unify-->
+        <!-- This dependency will be managed after version unification; currently, it's included as needed -->
         <dependency>
             <groupId>org.apache.seatunnel</groupId>
             <artifactId>connector-common</artifactId>
