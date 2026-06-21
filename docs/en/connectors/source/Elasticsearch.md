@@ -294,7 +294,7 @@ Demo 2 : Multi-table synchronization
 ```hocon
 source {
   Elasticsearch {
-    hosts = ["https://elasticsearch:9200"]
+    hosts = ["http://localhost:9200"]
     username = "elastic"
     password = "elasticsearch"
     tls_verify_certificate = false
@@ -343,7 +343,7 @@ transform {
 
 sink {
   Elasticsearch {
-    hosts = ["https://elasticsearch:9200"]
+    hosts = ["http://localhost:9200"]
     username = "elastic"
     password = "elasticsearch"
     tls_verify_certificate = false
@@ -407,7 +407,7 @@ notes: sql does not support map and array types
 ```hocon
 source {
   Elasticsearch {
-    hosts = ["https://elasticsearch:9200"]
+    hosts = ["http://localhost:9200"]
     username = "elastic"
     password = "elasticsearch"
     tls_verify_certificate = false
@@ -423,7 +423,7 @@ Demo7:  PIT
 ```hocon
 source {
   Elasticsearch {
-    hosts = ["https://elasticsearch:9200"]
+    hosts = ["http://localhost:9200"]
     username = "elastic"
     password = "elasticsearch"
     tls_verify_certificate = false
@@ -448,7 +448,7 @@ Demo 8: Runtime Fields (Elasticsearch 7.11+)
 ```hocon
 source {
   Elasticsearch {
-    hosts = ["https://elasticsearch:9200"]
+    hosts = ["http://localhost:9200"]
     username = "elastic"
     password = "elasticsearch"
     tls_verify_certificate = false
@@ -533,7 +533,7 @@ Demo 9: PIT with slicing
 ```hocon
 source {
   Elasticsearch {
-    hosts = ["https://elasticsearch:9200"]
+    hosts = ["http://localhost:9200"]
     username = "elastic"
     password = "elasticsearch"
     tls_verify_certificate = false
